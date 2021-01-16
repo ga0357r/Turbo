@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1167972751453455868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1167972751453455869}
+  - component: {fileID: 1167972751453455866}
+  - component: {fileID: 1167972751453455867}
+  - component: {fileID: 7193393693560788169}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1167972751453455869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167972751453455868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1167972751453455866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167972751453455868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff5c1b97e285ba42bf740e0a41081dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animation_speed: 50
+  seconds: 0.5
+--- !u!114 &1167972751453455867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167972751453455868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b2200a3e2b2fe4b862f76464449c42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cars:
+  - {fileID: 7344119384484072561, guid: a6f4cbe9f18bb4140919cc1d771e943a, type: 3}
+  - {fileID: 3005774958553010486, guid: 2aa3bf849a377a64db4d28520f3e35fb, type: 3}
+  - {fileID: 3240351196370355203, guid: edafdecc96e29cc4fa68b4dfc1c1b5b8, type: 3}
+--- !u!114 &7193393693560788169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167972751453455868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8099155c422945545a4e2617a7cdb50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main_menu:
+    m_Handle: 0
+  credits:
+    m_Handle: 0
+  level_1:
+    m_Handle: 0

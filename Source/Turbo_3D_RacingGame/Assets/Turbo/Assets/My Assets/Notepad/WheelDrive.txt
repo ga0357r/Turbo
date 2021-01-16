@@ -1,0 +1,20 @@
+//currentSpeed = 1000* 2 * Mathf.PI * frontLeftWheel.radius * (-frontLeftWheel.rpm) * (60 / 1000);
+
+            currentSpeed = 2 * Mathf.PI * RearLeftWheel.radius * (RearLeftWheel.rpm);
+
+            //Debug.Log(-frontLeftWheel.rpm);
+            //Debug.Log(currentSpeed);
+
+            //if the current speed is less than the max speed and the car is not braking
+            if (currentSpeed < maxSpeed && !isBraking)
+            {
+                //apply the motortorque
+                RearLeftWheel.motorTorque = maxMotorTorque;
+                RearRightWheel.motorTorque = maxMotorTorque;
+            }
+            else
+            {
+                //let the car roll
+                RearLeftWheel.motorTorque = 0;
+                RearRightWheel.motorTorque = 0;
+            }
